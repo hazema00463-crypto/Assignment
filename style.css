@@ -1,0 +1,110 @@
+.bg-orange {
+    background-color: #FF6900;
+}
+
+.btn-bd-primary {
+    font-weight: 600;
+    color: white;
+    background-color: rgb(255, 79, 20);
+}
+
+.btn-bd-primary:hover {
+    color: white;
+    background-color: rgb(255, 47, 0);
+    transition: 0.3s;
+    transform: scale(1.08);
+}
+
+.nav-link.active {
+    color: #FE4723 !important;
+    transition: 0.3s;
+
+}
+
+.navIcons:hover {
+    color: #FE4723 !important;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.content-bookmark:hover {
+    background-color: #ffceab;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.fa-share-nodes:hover {
+    background-color: #ffceab;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.nav-link:hover {
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.text-orange {
+    color: #FE4723
+}
+
+.border-orange {
+    border: .0625rem solid #FFB86A;
+}
+
+.bg-lightOrange {
+    background-color: #FFEDD4;
+}
+
+.w-8 {
+    width: 8%;
+}
+
+.p-section {
+    padding: 1.875rem 0rem 0rem 0rem;
+}
+
+
+.bg-yellow {
+    background-color: #fef8e4;
+}
+
+.w-fitContent {
+    width: fit-content;
+}
+
+.fs-8 {
+    font-size: .75rem;
+}
+
+.fs-7 {
+    font-size: .875rem;
+}
+
+.circle {
+    width: 1.5625rem;
+    height: 1.5625rem;
+}
+
+.top-20 {
+    top: 1.25rem;
+}
+
+.left-20 {
+    left: 1.25rem;
+}
+
+.left-50 {
+    left: 50%;
+}
+
+.bottom-20 {
+    bottom: 1.25rem;
+}
+
+.w-90 {
+    width: 90%;
+}

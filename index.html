@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/31c8f5354f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="bg-yellow">
+    <!-- NavBar -->
+    <nav>
+        <div class="nav">
+            <nav class="navbar-expand-lg p-3 bg-body-tertiary shadow d-flex">
+                <div class="container-fluid d-flex align-items-center gap-3">
+                    <div class="icon m-0">
+                        <i class="fa-solid shadow fa-utensils fs-5 bg-orange p-3 mb-0 rounded-circle text-white"></i>
+                    </div>
+                    <div class="title align-self-center">
+                        <div>
+                            <p class="mb-0 fs-4 fw-bold">What's For Dinner</p>
+                        </div>
+                        <div>
+                            <p class="mb-0 text-secondary">Your daily meal inspiration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex align-items-center gap-3 justify-content-end align-items-center">
+                    <ul class="d-flex gap-3 fs-5 list-unstyled mb-0">
+                        <li><i class="navIcons fa-solid fa-bookmark text-secondary"></i></li>
+                        <li><i class="navIcons fa-solid fa-clock-rotate-left text-secondary"></i></li>
+                        <li><i class="navIcons fa-solid fa-gear text-secondary"></i></li>
+                    </ul>
+                    <div class="w-8"><img class="w-100 rounded-circle border-orange border-3" src="images/avatar-4.jpg"
+                            alt="Man"></div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+    <!-- Body  -->
+    <div class="container p-0 m-auto row rounded-4 bg-white overflow-hidden mt-5">
+        <!-- Image section -->
+        <div class="g-0 col-12 col-lg-5 d-flex position-relative">
+            <img id="recipeImage" class="w-100 object-fit-cover" src="images/photo-1574071318508-1cdbab80d002.avif"
+                alt="Food">
+            <div
+                class="position-absolute top-20 left-20 rounded-pill d-flex justify-content-evenly bg-body align-items-center ps-3 pe-3 pt-2 pb-2">
+                <span><i class="fa-solid fa-star" style="color: rgb(249, 249, 14);"> </i></span>
+                <p id="recipeRating" class="mb-0 fw-semibold ps-1 pe-2"> 4.9</p>
+                <p id="recipeReviews" class="mb-0 text-secondary fs-7"> (512 reviews)</p>
+            </div>
+            <div
+                class="position-absolute bottom-20 pe-5 ps-5 pt-4 pb-4 w-90 translate-middle-x start-50 rounded-4 d-flex justify-content-between bg-body align-items-center">
+                <div class="text-center">
+                    <i class="fa-solid fa-clock text-orange fs-4"></i>
+                    <p class="text-secondary mb-0">Prep Time.</p>
+                    <p id="prepTime" class="fw-semibold mb-0">90 min</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-fire-burner fs-4 text-danger" ;></i>
+                    <p class="text-secondary mb-0">cook Time.</p>
+                    <p id="cookTime" class="fw-semibold mb-0">12 min</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-users fs-4 text-primary"></i>
+                    <p class="text-secondary mb-0">Servings</p>
+                    <p id="servings" class="fw-semibold mb-0">2 People</p>
+                </div>
+            </div>
+        </div>
+        <!-- Content Section -->
+        <div class=" bg-white col-12 col-lg-7 p-5 overflow-auto" style="height: 50rem;">
+            <!-- Level & Cuisine -->
+            <div class="d-flex gap-3">
+                <div class="bg-success-subtle rounded-pill text-center w-fitContent">
+                    <p id="recipeLevel" class="mb-0 ps-3 pe-3 fs-8 p-1 text-success fw-semibold">Intermediate</p>
+                </div>
+                <div class="bg-primary-subtle rounded-pill text-center w-fitContent">
+                    <p id="recipeCuisine" class="mb-0 ps-3 pe-3 fs-8 p-1 text-primary fw-semibold">Italian</p>
+                </div>
+            </div>
+            <!-- About the dish -->
+            <div>
+                <div class="pt-1 d-flex align-items-center justify-content-between">
+                    <p id="recipeName" class="fs-1 fw-bold mb-0">Margherita Pizza</p>
+                    <div class="">
+                        <i class="fa-solid fa-bookmark content-bookmark bg-yellow p-3 rounded-3 text-orange"></i>
+                        <i class="fa-solid fa-share-nodes bg-yellow p-3 rounded-3 text-orange"></i>
+                    </div>
+
+                </div>
+                <div class="mt-0">
+                    <p id="recipeDescription" class="text-secondary fs-5">Classic Italian pizza with fresh mozzarella
+                        and basil</p>
+                </div>
+            </div>
+            <!-- Alert -->
+            <div
+                class="bg-danger-subtle p-3 d-flex gap-3 mt-4 align-items-center rounded-3 border-start border-4 border-danger">
+                <div><i class="fa-solid fa-triangle-exclamation text-danger"></i></div>
+                <div>
+                    <p id="recipeAlertTitle" class="fw-semibold text-danger-emphasis mb-0">Extended Preparation Time</p>
+                    <p id="recipeAlertText" class=" text-danger mb-0 fs-7">This recipe requires more than 45 minutes to
+                        prepare. Plan
+                        accordingly!</p>
+                </div>
+            </div>
+            <!-- Tabs list-->
+            <div class="p-section">
+                <ul class="nav nav-underline d-flex justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" data-bs-toggle="tab" href="#Ingredients"><i
+                                class="fa-solid fa-list-check"></i> Ingredients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" data-bs-toggle="tab" href="#Instructions"><i
+                                class="fa-solid fa-book-open"></i> Instructions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" data-bs-toggle="tab" href="#Nutrition"><i
+                                class="fa-solid fa-chart-pie"></i> Nutrition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" data-bs-toggle="tab" href="#ChifsTips"><i
+                                class="fa-solid fa-lightbulb"></i> Chef'sTips</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <!-- Tabs content -->
+            <div class="tab-content mb-4">
+                <!-- Tab (Ingredients) Content -->
+                <div class="bg-yellow p-3 rounded-4 tab-pane fade show active" id="Ingredients">
+                </div>
+                <!-- Tab (Instructions) Content -->
+                <div class="p-3 rounded-4 tab-pane fade" id="Instructions">
+                </div>
+                <!-- Tab (Nutrition) Content -->
+                <div class="tab-pane fade" id="Nutrition">
+                    <div class="row g-3" id="nutritionContent">
+                    </div>
+                </div>
+                <!-- Tab (Chif's Tips) Content -->
+                <div class="overflow-auto p-3 rounded-4 tab-pane fade" id="ChifsTips">
+                </div>
+            </div>
+            <!-- Line  -->
+            <hr>
+            <!--Change Button -->
+            <button id="changeRecipe" onclick="changeRecipe()" type="button"
+                class="mt-2 pt-3 pb-3 ps-4 pe-4 rounded-4 btn-bd-primary border-0 shadow"><i
+                    class="fa-solid fa-arrows-rotate"></i> Try Another Recipe</button>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>
